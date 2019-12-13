@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Register</string>
+
+    <string name="text_fullname">Ho va Ten </string>
+    <string name="text_born">Sinh ngay </string>
+    <string name="text_time">Thoi gian </string>
+    <string name="text_number_phone">SDT</string>
+</resources>
