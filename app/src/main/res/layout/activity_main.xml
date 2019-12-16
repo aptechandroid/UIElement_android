@@ -1,146 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical"
     >
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimenImage"
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:background="@mipmap/banner_technoly_tow"
-        android:gravity="center"
-        android:scaleType="centerCrop"
-        android:text="@string/app_name"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="261dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="openLoginPage"
+        android:text="@string/log_in_page"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
-    <!--full name-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginTop="20dp"
-        >
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/mTxtFullName"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/text_fullname"
-            android:textColor="@color/colorBlack"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_toEndOf="@+id/mTxtFullName"
-            android:layout_toRightOf="@id/mTxtFullName"
-            android:inputType="textCapWords"
-            android:maxLength="25"
-            android:maxLines="1"
-            />
-    </RelativeLayout>
-
-    <!--born -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="horizontal"
-        >
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/text_born"
-            android:textColor="@color/colorBlack"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="11/11/1999"
-            android:textStyle="italic"
-            />
-    </LinearLayout>
-
-    <!--Time date  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="horizontal"
-        >
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/text_time"
-            android:textColor="@color/colorBlack"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="11:11"
-            android:textStyle="italic"
-            />
-    </LinearLayout>
-
-    <!--number phone -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginTop="20dp"
-        >
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/mTxtFullPhone"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/text_number_phone"
-            android:textColor="@color/colorBlack"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_toEndOf="@+id/mTxtFullPhone"
-            android:layout_toRightOf="@id/mTxtFullPhone"
-            android:inputType="number"
-            />
-    </RelativeLayout>
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@android:string/ok"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="261dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="openSignupPage"
+        android:text="@string/register_page"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0"
         />
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
