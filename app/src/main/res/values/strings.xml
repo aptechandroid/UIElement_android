@@ -15,6 +15,7 @@
         completions."
     </string>
     <string name="first_name">First Name</string>
+    <string name="user_name">User Name</string>
     <string name="last_name">Last Name</string>
     <string name="log_in_page">Log In page</string>
     <string name="register_page">Register page</string>
