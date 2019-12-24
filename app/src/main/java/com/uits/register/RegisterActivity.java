@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.uits.register.model.User;
 import com.uits.register.sqliteDB.DatabaseHelper;
@@ -62,6 +63,8 @@ public class RegisterActivity extends AppCompatActivity {
                     user.setPassword(mPassword.getText().toString());
                     user.setNumberPhone("0935 366 007");
                     mDBHelper.insertUser(user);
+                    Toast.makeText(RegisterActivity.this,"Dang ki thanh cong ", Toast.LENGTH_LONG).show();
+                    finish();
                 }
             }
         });

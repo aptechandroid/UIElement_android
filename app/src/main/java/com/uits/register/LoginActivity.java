@@ -57,6 +57,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (validation()) {
                     Toast.makeText(LoginActivity.this, "Login thanh cong", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(LoginActivity.this, DashBoardActivity.class));
+                    finish();
                 }
             }
         });

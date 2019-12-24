@@ -28,6 +28,11 @@
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivity"
             />
+
+        <activity
+            android:name=".DashBoardActivity"
+            android:parentActivityName=".MainActivity"
+            />
     </application>
 
 </manifest>
